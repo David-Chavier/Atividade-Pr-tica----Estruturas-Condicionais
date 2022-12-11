@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP.Q4</title>
+</head>
+<body>
+    <script>
+        
+//   Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar
+// descontos para todos, mas especialmente para mulheres. Faça um
+// programa que leia nome, sexo e o valor das compras do cliente e
+// calcule o preço com desconto. Sabendo que:
+// a. Homens ganham 5% de desconto
+
+// b. Mulheres ganham 13% de desconto
+
+        const nome = prompt('Nome');
+        const sexo = prompt('Digite o sexo: "homem" ou "mulher"');
+        const valordascompras = parseFloat(prompt('Valor das compras'))
+      
+                         
+            switch(sexo){
+                case 'homem':
+                    document.write(`${nome}. Valor das compras: R$${valordascompras.toFixed(2)} com 5% de desconto fica R$${(95 * valordascompras / 100).toFixed(2)} <br/>`)     
+                    break;
+                case 'mulher':
+                document.write(`${nome}. Valor das compras: R$${valordascompras.toFixed(2)} com 13% de desconto fica R$${(87 * valordascompras / 100).toFixed(2)} <br/>`)
+                    break;
+                default:
+                    'valor não registrado'
+
+            }
+
+    </script>
+</body>
+</html>

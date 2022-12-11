@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP.Q5</title>
+</head>
+<body>
+<script>
+
+    // Faça um algoritmo que pergunte a distância que um passageiro
+    // deseja percorrer em Km. Calcule o preço da passagem, cobrando
+    // R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais
+    // longas.
+    
+    const km = parseFloat(prompt('Qual o tamanho do percuso em km?'))
+
+    if(km <= 200){
+        document.write(`R$${(0.5 * km).toFixed(2)}`)
+    }else{
+        document.write(`R$${(0.45 * km).toFixed(2)}`)
+    }
+
+</script>
+</body>
+</html>

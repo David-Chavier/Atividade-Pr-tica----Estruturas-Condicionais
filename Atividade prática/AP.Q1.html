@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP3Q1</title>
+</head>
+<body>
+    <script>
+        
+        //         Faça um algoritmo que leia a idade de vários alunos de uma turma.
+        // O programa vai parar quando for digitada a idade 999. No final,
+        // mostre quantos alunos existem na turma e qual é a média de idade
+        // do grupo.
+
+        let dados = []; 
+        let somadosdados = 0;
+
+        while( dados[dados.length - 1] !== 999){        
+            dados.push(parseInt(prompt('Insira um número!')))        
+        }
+
+        for(let i = 0; i < dados.length; i++){
+            somadosdados += dados[i]
+        }
+
+        document.write(`Tem ${dados.length - 1} alunos na turma. <br/>`)
+        document.write(`A média das idades dos alunos é: ${(somadosdados - 999) / (dados.length - 1)}`)
+
+    </script>
+</body>
+</html>
